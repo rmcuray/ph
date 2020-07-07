@@ -1,0 +1,22 @@
+a {
+    color: black;
+}
+
+.container-fluid {
+    max-width: 480px;
+}
+
+.page-header h3 {
+    padding: 1em 0;
+}
+
+.profile-icon,
+.album-icon {
+    height: 3em;
+    filter: contrast(0.7);
+}
+
+.header {
+    width: 100%;
+    padding: 0 0 1em 0;
+}
