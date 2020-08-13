@@ -112,5 +112,47 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
+<body>
+
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<video id="video-id" controls=""><source src="https://video-downloads.googleusercontent.com/AGQNM9JU5hovG_mSG7Fk6VP8G6--hydDBdn4u-XcN9YafwsTpidegrU5gx8pQnyqtOhi4-T1cZv2bRFp89pVBDlzW08DjqdCk7wBysKc1DdwBsL1l3g5p1V0ok2nEgePRYJjwEUGsNiGGJc4ffMq33n0bICxSvsb8YV27Ad_WgOpXOQfJ0j7npawi6bTlri0KfHpg3SWvlCoIfATL6JD8YYkcqS4JgLDmvMmPxVlwtOhqeo6159Qisge39V42vE-AFzTNJwV6hdd16FQ6b27GHtJCxCg_cmrTfjk55zWmKi146hyGf7OxfzHAkVOmrbazE2zT3Mh3JDI4_2m2PlrRQur57FGkEIpH8GAOtdyqXZ2eSSYf0wEUy5NAna6XF17CzHssHah9gf9BOmnG-cn2CSKSAPboCIFgTzNlgQlmbh2CePOHvQuAnQk_PN5t2WGRT-53mIOEbzjQtmJnBTNRUxaySQKq4D8UIWTVq0g4h5BgH_uYfeGegvGOIiib_WUj3h9nuLLOTWc0Pj89-joCvtfrUKJthQwejPCcd4FYxbNaE4Aq2p4TSlQkvTKz9TVmrI8ys3EixCESkfW8cFbUtJzJ4rzClBmPQfxtF4EMaop-S7ZoJuIaSvtIpvnXsuuOrOIUyPWrGk_BkeVnNVO_CJ1yfjgyaSFyAY8UkPuPeYtPWOei-xsFHKgalxmvilZ5SNz-lOhBCKmYtDgDRvbHQK4oaXxDwOISf0Q4VGO-E4iwx8LU0YLEHm7LohYHIBfMKNxirW9LR1r3dEuO_QEWC2291ikgFMCaHXHKeMVZ19AQz5suUqXv9rJj7ET2pREnSycMVtc3yZ7SRAA16_sfOWa9XcOFTQ_yOuo53dncbBd6JkBuG3cDWYGzhihOYq4_h5JcACSuJswZCTqCCvb9ZxDt13ajm58sMvKHhh7OdmkJlvYsE1aLwfV79zJLoPr7GZWMbyxziAoeUR4H7NbzXl9_Iph-ndAT7_hkh_pW2gpj9IBP09QCbLl2sJi9rBkXKmd4zHkHYZ2?authuser=0" type="video/mp4">
+<script>
+    var myFP = fluidPlayer(
+        'video-id',	{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 3,
+			"animated": true,
+			"autoHide": true
+		},
+		"logo": {
+			"imageUrl": null,
+			"position": "top left",
+			"clickUrl": null,
+			"opacity": 1
+		},
+		"htmlOnPauseBlock": {
+			"html": "beep boop beep!",
+			"height": null,
+			"width": null
+		},
+		"autoPlay": false,
+		"mute": true,
+		"allowTheatre": true,
+		"playPauseAnimation": true,
+		"playbackRateEnabled": true,
+		"allowDownload": true,
+		"playButtonShowing": true,
+		"fillToContainer": false,
+		"posterImage": ""
+	},
+	"vastOptions": {
+		"adList": [],
+		"adCTAText": false,
+		"adCTATextPosition": ""
+	}
+}
+</script>
+</video></body>
 
 </html>
