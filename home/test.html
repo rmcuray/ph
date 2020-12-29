@@ -1,0 +1,38 @@
+<input id="searchbox" value="" placeholder="uuid"/>
+<button onclick="submitt()">GO</button>
+<p id="canvas"></p>
+
+<script>
+function parseURLParams(e) {
+  var n, t, l, o, r = e.indexOf("?") + 1,
+    p = e.indexOf("#") + 1 || e.length + 1,
+    i = e.slice(r, p - 1),
+    s = i.replace(/\+/g, " ").split("&"),
+    a = {};
+  if (i !== e && "" !== i) {
+    for (n = 0; n < s.length; n++) o = s[n].split("=", 2), t = decodeURIComponent(o[0]), l = decodeURIComponent(o[1]), a.hasOwnProperty(t) || (a[t] = []), a[t].push(2 === o.length ? l : null);
+    return a
+  }
+}
+//var urlString = window.location.href;
+var urlString = "?name=Lumos";
+urlParams = parseURLParams(urlString);
+xmlhttp = new XMLHttpRequest();
+username = urlParams.name;
+url = "https://api.minetools.eu/uuid/" + username;
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var input = JSON.parse(this.responseText);
+    document.getElementById("canvas").innerHTML = "<img src='https://visage.surgeplay.com/bust/250/" + input.id + "'>";
+  }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function submitt() {
+  var dataInput = document.getElementById("searchbox").value;
+  //window.location.href = window.location.hostname + "?name=" + dataInput;
+  console.log(window.location.hostname + "?name=" + dataInput);
+}
+
+</script>
