@@ -14,8 +14,8 @@ function parseURLParams(e) {
     return a
   }
 }
-//var urlString = window.location.href;
-var urlString = "?name=Lumos";
+var urlString = window.location.href;
+//var urlString = "?name=Lumos";
 urlParams = parseURLParams(urlString);
 xmlhttp = new XMLHttpRequest();
 username = urlParams.name;
@@ -31,8 +31,8 @@ xmlhttp.send();
 
 function submitt() {
   var dataInput = document.getElementById("searchbox").value;
-  //window.location.href = window.location.hostname + "?name=" + dataInput;
-  console.log(window.location.hostname + "?name=" + dataInput);
+  window.location.href = window.location.hostname + "?name=" + dataInput;
+  //console.log(window.location.hostname + "?name=" + dataInput);
 }
 
 </script>
